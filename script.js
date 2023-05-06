@@ -45,7 +45,7 @@ function game() {
   for (let i = 1; i <= 5; i++) {
     console.log(`Game ${i}`);
     console.log('--------');
-    let playerSelection = prompt('Please enter your selection');
+    let playerSelection = prompt('Please enter your selection : "Rock" , "Paper" , "Scissors"');
     playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
     const computerSelection = computerPlay();
     playRound(playerSelection, computerSelection);
